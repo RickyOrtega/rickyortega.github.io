@@ -1,0 +1,112 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    header {
+        background-color: #bbb;
+
+        .contenedor {
+            margin: auto;
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            h1 {
+                img {
+                    width: 250px;
+                }
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+
+                ul {
+                    margin: auto 50px;
+
+                    li {
+                        display: inline;
+                        margin: 0 0 0 15px;
+                        a {
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: #000;
+                            font-weight: 600;
+                            font-size: 22px;
+                            border-bottom: #000 transparent 2px;
+                            &:hover{
+                                color: #fff;
+                                border-bottom: #000 solid 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .productos{
+            width: 1000px;
+            margin: 3% auto;
+            .tarjeta{
+                text-align: center;
+                display: inline-block;
+                width: 30%;
+                vertical-align: top;
+                margin: 10px 1.5%;
+                padding: 30px 20px;
+                border: #000 solid 3px;
+                border-radius: 10px;
+                .titulo-lista{
+                    font-size: 30px;
+                }
+                .muestra-producto{
+                    width: 250px;
+                    height: 250px;
+                }
+                .descripcion{
+                    font-size: 18px;
+                }
+                .precio{
+                    font-size: 25px;
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+
+                &:hover{
+                    border-color: rgb(209, 195, 3);
+                    width: 33%;
+                    margin: 0px;
+                    .descripcion{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .contenedor{
+            background: #000;
+            display: flex;
+            justify-content: center;
+            .imagen{
+                img{
+                    height: 250px;
+                    width: 250px;
+                }
+            }
+            .copyright{
+                color: #fff;
+                font-size: 12px;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

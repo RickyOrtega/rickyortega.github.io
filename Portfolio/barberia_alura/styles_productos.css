@@ -1,0 +1,77 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+  body header {
+    background-color: #bbb; }
+    body header .contenedor {
+      margin: auto;
+      max-width: 1000px;
+      display: flex;
+      justify-content: space-between; }
+      body header .contenedor h1 img {
+        width: 250px; }
+      body header .contenedor nav {
+        display: flex;
+        flex-wrap: wrap; }
+        body header .contenedor nav ul {
+          margin: auto 50px; }
+          body header .contenedor nav ul li {
+            display: inline;
+            margin: 0 0 0 15px; }
+            body header .contenedor nav ul li a {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: #000;
+              font-weight: 600;
+              font-size: 22px;
+              border-bottom: #000 transparent 2px; }
+              body header .contenedor nav ul li a:hover {
+                color: #fff;
+                border-bottom: #000 solid 2px; }
+  body main .productos {
+    width: 1000px;
+    margin: 3% auto; }
+    body main .productos .tarjeta {
+      text-align: center;
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+      margin: 10px 1.5%;
+      padding: 30px 20px;
+      border: #000 solid 3px;
+      border-radius: 10px; }
+      body main .productos .tarjeta .titulo-lista {
+        font-size: 30px; }
+      body main .productos .tarjeta .muestra-producto {
+        width: 250px;
+        height: 250px; }
+      body main .productos .tarjeta .descripcion {
+        font-size: 18px; }
+      body main .productos .tarjeta .precio {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 10px; }
+      body main .productos .tarjeta:hover {
+        border-color: #d1c303;
+        width: 33%;
+        margin: 0px; }
+        body main .productos .tarjeta:hover .descripcion {
+          font-size: 20px; }
+  body footer .contenedor {
+    background: #000;
+    display: flex;
+    justify-content: center; }
+    body footer .contenedor .imagen img {
+      height: 250px;
+      width: 250px; }
+    body footer .contenedor .copyright {
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      padding-bottom: 20px; }

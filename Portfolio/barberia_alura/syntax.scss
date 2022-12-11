@@ -1,0 +1,99 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    .encabezado{
+        text-align: center;
+        padding: 2 0px 0px;
+        margin: 0;
+    }
+
+    .articulo {
+        margin: auto;
+        max-width: 1000px;
+
+        .contenido {
+            .imagen {
+                background-color: #fff;
+                padding-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .presentacion {
+                background: #ccc;
+                display: flex;
+                text-align: center;
+                margin: auto;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .titulo {
+                    text-align: center;
+                }
+
+                .parrafo {
+                    margin: 20px 0px;
+                    text-align: center;
+                }
+
+                .bold {
+                    font-weight: 600;
+                }
+
+                .enfasis {
+                    margin: 20px 0px;
+                    font-style: italic;
+                }
+
+                .dos {
+                    .bold {
+                        color: #ff0000;
+                    }
+                }
+            }
+
+            .lista {
+                background: #fff;
+                max-width: 100%;
+                padding: 10px 50px;
+
+                .titulo {
+                    margin: 20px 0px;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .diferenciales-cont {
+                    display: flex;
+
+                    ul {
+                        width: 48%;
+
+                        .elemento-lista {
+                            margin-bottom: 15px;
+                            text-align: left;
+                            font-style: italic;
+                        }
+                    }
+
+                    .imagen-dif {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

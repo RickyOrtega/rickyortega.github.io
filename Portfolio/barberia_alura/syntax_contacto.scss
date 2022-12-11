@@ -1,0 +1,138 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    header {
+        background-color: #bbb;
+
+        .contenedor {
+            margin: auto;
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            h1 {
+                img {
+                    width: 250px;
+                }
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+
+                ul {
+                    margin: auto 50px;
+
+                    li {
+                        display: inline;
+                        margin: 0 0 0 15px;
+                        a {
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: #000;
+                            font-weight: 600;
+                            font-size: 22px;
+                            border-bottom: #000 transparent 2px;
+                            &:hover{
+                                color: #fff;
+                                border-bottom: #000 solid 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        max-width: 1000px;
+        margin: auto;
+        .contenedor{
+            .formulario{
+                margin: 40px 0;
+                label,p,legend{
+                    display: block;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                .cajas{
+                    display: block;
+                    margin-bottom: 20px;
+                    padding: 10px 25px;
+                    width: 50%;
+                }
+                textarea{
+                    width: 50%;
+                    min-width: 50%;
+                    max-width: 50%;
+                    height: 100px;
+                    min-height: 100px;
+                    max-height: 200px;
+                }
+                .checkbox{
+                    margin: 20px 0;
+                }
+
+                .lista-botones{
+                    border: none;
+                }
+                
+                .enviar{
+                    width: 40%;
+                    padding: 15px 0;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #fff;
+                    background: rgb(100, 100, 100);
+                    border: none;
+                    border-radius: 5px;
+                    transition: 1s all;
+                    cursor:pointer;
+                    &:hover{
+                        background: #000;
+                        transform: scale(1.2);
+                    }
+                }
+
+            }
+            .horarios{
+                margin: 40px;
+                thead{
+                    background: #555555;
+                    color: #fff;
+                    font-weight: bold;
+                }
+                td, th{
+                    border:1px solid #000;
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+
+    footer{
+        .contenedor{
+            background: #000;
+            display: flex;
+            justify-content: center;
+            .imagen{
+                img{
+                    height: 250px;
+                    width: 250px;
+                }
+            }
+            .copyright{
+                color: #fff;
+                font-size: 12px;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

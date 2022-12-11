@@ -1,0 +1,96 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+  body header {
+    background-color: #bbb; }
+    body header .contenedor {
+      margin: auto;
+      max-width: 1000px;
+      display: flex;
+      justify-content: space-between; }
+      body header .contenedor h1 img {
+        width: 250px; }
+      body header .contenedor nav {
+        display: flex;
+        flex-wrap: wrap; }
+        body header .contenedor nav ul {
+          margin: auto 50px; }
+          body header .contenedor nav ul li {
+            display: inline;
+            margin: 0 0 0 15px; }
+            body header .contenedor nav ul li a {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: #000;
+              font-weight: 600;
+              font-size: 22px;
+              border-bottom: #000 transparent 2px; }
+              body header .contenedor nav ul li a:hover {
+                color: #fff;
+                border-bottom: #000 solid 2px; }
+  body main {
+    max-width: 1000px;
+    margin: auto; }
+    body main .contenedor .formulario {
+      margin: 40px 0; }
+      body main .contenedor .formulario label, body main .contenedor .formulario p, body main .contenedor .formulario legend {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 10px; }
+      body main .contenedor .formulario .cajas {
+        display: block;
+        margin-bottom: 20px;
+        padding: 10px 25px;
+        width: 50%; }
+      body main .contenedor .formulario textarea {
+        width: 50%;
+        min-width: 50%;
+        max-width: 50%;
+        height: 100px;
+        min-height: 100px;
+        max-height: 200px; }
+      body main .contenedor .formulario .checkbox {
+        margin: 20px 0; }
+      body main .contenedor .formulario .lista-botones {
+        border: none; }
+      body main .contenedor .formulario .enviar {
+        width: 40%;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        background: #646464;
+        border: none;
+        border-radius: 5px;
+        transition: 1s all;
+        cursor: pointer; }
+        body main .contenedor .formulario .enviar:hover {
+          background: #000;
+          transform: scale(1.2); }
+    body main .contenedor .horarios {
+      margin: 40px; }
+      body main .contenedor .horarios thead {
+        background: #555555;
+        color: #fff;
+        font-weight: bold; }
+      body main .contenedor .horarios td, body main .contenedor .horarios th {
+        border: 1px solid #000;
+        padding: 8px 15px; }
+  body footer .contenedor {
+    background: #000;
+    display: flex;
+    justify-content: center; }
+    body footer .contenedor .imagen img {
+      height: 250px;
+      width: 250px; }
+    body footer .contenedor .copyright {
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      padding-bottom: 20px; }
