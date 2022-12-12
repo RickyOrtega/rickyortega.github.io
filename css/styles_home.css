@@ -5,5 +5,33 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
-body {
-  font-family: 'Poppins', sans-serif; }
+a, ul {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  height: 100%; }
+  html header .superior, body header .superior {
+    background: #08284d;
+    margin: auto;
+    text-align: center;
+    padding: 5%; }
+    html header .superior .nombre, body header .superior .nombre {
+      font-size: 45px;
+      font-weight: 600;
+      color: bisque;
+      transition: 0.1s all; }
+    html header .superior .titulo, body header .superior .titulo {
+      font-size: 22px;
+      font-weight: 600;
+      color: bisque;
+      transition: 0.1s all; }
+    html header .superior .nombre:hover, html header .superior .titulo:hover, body header .superior .nombre:hover, body header .superior .titulo:hover {
+      color: #d386ff;
+      text-shadow: #d386ff 1px 0 5px; }
+  html main .contenedor, body main .contenedor {
+    max-width: 1000px;
+    margin: auto; }

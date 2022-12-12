@@ -6,6 +6,45 @@
     -webkit-box-sizing: border-box;
 }
 
-body{
+a, ul{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+html,body{
     font-family: 'Poppins', sans-serif;
+    height: 100%;
+    header{
+        .superior{
+            background: #08284d;
+            margin: auto;
+            text-align: center;
+            padding: 5%;
+            .nombre{
+                font-size: 45px;
+                font-weight: 600;
+                color: bisque;
+                transition: 0.1s all;
+            }
+            .titulo{
+                font-size: 22px;
+                font-weight: 600;
+                color: bisque;
+                transition: 0.1s all;
+            }
+
+            .nombre:hover, .titulo:hover{
+                color: #d386ff;
+                text-shadow: #d386ff 1px 0 5px;
+            }
+        }
+    }
+    main{
+        .contenedor{
+            max-width: 1000px;
+            margin: auto;
+        }
+    }
 }
