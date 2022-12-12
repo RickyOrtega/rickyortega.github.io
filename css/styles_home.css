@@ -7,31 +7,35 @@
 
 a, ul {
   text-decoration: none; }
+  a:visited, ul:visited {
+    color: #ff008c; }
 
 li {
   list-style: none; }
 
 html, body {
   font-family: 'Poppins', sans-serif;
+  background: #532d84;
   height: 100%; }
-  html header .superior, body header .superior {
-    background: #08284d;
-    margin: auto;
+  html header, html footer, body header, body footer {
+    background: #120632;
     text-align: center;
     padding: 5%; }
-    html header .superior .nombre, body header .superior .nombre {
-      font-size: 45px;
-      font-weight: 600;
-      color: bisque;
+    html header .superior, html footer .superior, body header .superior, body footer .superior {
+      margin: auto;
+      max-width: 400px; }
+    html header .nombre, html footer .nombre, body header .nombre, body footer .nombre {
+      font-size: 45px; }
+    html header .titulo, html footer .titulo, body header .titulo, body footer .titulo {
+      font-size: 22px; }
+    html header .nombre, html header .titulo, html footer .nombre, html footer .titulo, body header .nombre, body header .titulo, body footer .nombre, body footer .titulo {
+      color: #fff;
+      display: inline;
+      padding: 0px;
       transition: 0.1s all; }
-    html header .superior .titulo, body header .superior .titulo {
-      font-size: 22px;
-      font-weight: 600;
-      color: bisque;
-      transition: 0.1s all; }
-    html header .superior .nombre:hover, html header .superior .titulo:hover, body header .superior .nombre:hover, body header .superior .titulo:hover {
-      color: #d386ff;
-      text-shadow: #d386ff 1px 0 5px; }
-  html main .contenedor, body main .contenedor {
-    max-width: 1000px;
-    margin: auto; }
+      html header .nombre:hover, html header .titulo:hover, html footer .nombre:hover, html footer .titulo:hover, body header .nombre:hover, body header .titulo:hover, body footer .nombre:hover, body footer .titulo:hover {
+        text-shadow: 0 0 0.5em #ff008c, 0 0 0.5em #ff008c, 0 0 0.5em #ff008c; }
+
+main .contenedor {
+  max-width: 1000px;
+  margin: auto; }

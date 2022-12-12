@@ -1,3 +1,5 @@
+$colorNeon:#ff008c;
+
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +10,9 @@
 
 a, ul{
     text-decoration: none;
+    &:visited{
+        color: $colorNeon;
+    }
 }
 li{
     list-style: none;
@@ -15,29 +20,31 @@ li{
 
 html,body{
     font-family: 'Poppins', sans-serif;
+    background: #532d84;
     height: 100%;
-    header{
-        .superior{
-            background: #08284d;
-            margin: auto;
+    header, footer{
+            background: #120632;
             text-align: center;
             padding: 5%;
+            .superior{
+                margin: auto;
+                max-width: 400px;
+            }
             .nombre{
                 font-size: 45px;
-                font-weight: 600;
-                color: bisque;
-                transition: 0.1s all;
             }
             .titulo{
                 font-size: 22px;
-                font-weight: 600;
-                color: bisque;
-                transition: 0.1s all;
             }
 
-            .nombre:hover, .titulo:hover{
-                color: #d386ff;
-                text-shadow: #d386ff 1px 0 5px;
+            .nombre, .titulo{
+                color: #fff;
+                display: inline;
+                padding: 0px;
+                transition: 0.1s all;
+                &:hover{
+                    text-shadow: 0 0 0.5em $colorNeon, 0 0 0.5em $colorNeon, 0 0 0.5em $colorNeon;
+                }
             }
         }
     }
@@ -45,6 +52,10 @@ html,body{
         .contenedor{
             max-width: 1000px;
             margin: auto;
+            .proyectos{
+                .lista{
+                    
+                }
+            }
         }
     }
-}
