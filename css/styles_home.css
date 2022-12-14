@@ -15,7 +15,6 @@ li {
 
 html, body {
   font-family: 'Poppins', sans-serif;
-  background: #532d84;
   height: 100%; }
   html header, html footer, body header, body footer {
     background: #120632;
@@ -36,6 +35,24 @@ html, body {
       html header .nombre:hover, html header .titulo:hover, html footer .nombre:hover, html footer .titulo:hover, body header .nombre:hover, body header .titulo:hover, body footer .nombre:hover, body footer .titulo:hover {
         text-shadow: 0 0 0.5em #ff008c, 0 0 0.5em #ff008c, 0 0 0.5em #ff008c; }
 
-main .contenedor {
+main .contenedor .proyectos .lista .proyecto {
+  height: 400px;
   max-width: 1000px;
-  margin: auto; }
+  transition: all 0.2s; }
+  main .contenedor .proyectos .lista .proyecto:hover {
+    transform: scale(1.1); }
+
+main .contenedor .proyectos .lista .proyecto:nth-child(odd) {
+  background: #532d84;
+  text-align: center;
+  margin: 40px 400px 40px 0; }
+
+main .contenedor .proyectos .lista .proyecto:nth-child(even) {
+  background: #120632;
+  text-align: center;
+  margin: 0 0 40px 853px; }
+
+main .contenedor .proyectos .lista .caja-trasera {
+  background: #000;
+  text-align: center;
+  margin: 10 100 100 100; }

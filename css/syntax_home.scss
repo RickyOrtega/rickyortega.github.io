@@ -20,7 +20,6 @@ li{
 
 html,body{
     font-family: 'Poppins', sans-serif;
-    background: #532d84;
     height: 100%;
     header, footer{
             background: #120632;
@@ -48,13 +47,33 @@ html,body{
             }
         }
     }
-    main{
+    main{          
         .contenedor{
-            max-width: 1000px;
-            margin: auto;
             .proyectos{
                 .lista{
-                    
+                    .proyecto{
+                        height: 400px;
+                        max-width: 1000px;
+                        transition: all 0.2s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                    .proyecto:nth-child(odd){
+                        background: #532d84;
+                        text-align: center;
+                        margin: 40px 400px 40px 0;
+                    }
+                    .proyecto:nth-child(even){
+                        background: #120632;
+                        text-align: center;
+                        margin: 0 0 40px 853px;
+                    }
+                    .caja-trasera{
+                        background: #000;
+                        text-align: center;
+                        margin: 10 100 100 100;
+                    }
                 }
             }
         }
