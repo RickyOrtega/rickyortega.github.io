@@ -125,6 +125,6 @@ body {
 
 @media screen and (max-width: 800px) {
   body .contenedor main form textarea {
-    height: 700px;
-    max-height: 700px;
-    min-height: 700px; } }
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px; } }

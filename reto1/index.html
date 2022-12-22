@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="styles.css">
     <title>Encriptador</title>
 </head>
-
 <body>
     <header>
         <div class="logo">
@@ -22,25 +21,25 @@
     <div class="contenedor">
         <main>
             <form action="">
-                <textarea placeholder="Ingrese el texto aquí" required></textarea>
+                <textarea placeholder="Ingrese el texto aquí" id="texto" required></textarea>
                 <div class="exclamacion">
                     <p>!</p>
                 </div>Solo letras minúsculas y sin acentos.
                 <div class="botones">
-
-                    <input type="button" value="Encriptar">
-                    <input type="button" value="Desencriptar">
+                    <input type="button" value="Encriptar" id="encriptar" class="encriptar">
+                    <input type="button" value="Desencriptar" id="desencriptar" class="desencriptar">
                 </div>
             </form>
         </main>
         <aside>
             <div class="contenedor-aside">
-                <div class="imagen"> <img src="src/buscar.png" alt="búsqueda"></div>
+                <div class="imagen"> <img src="src/buscar.png" alt="búsqueda" id="imagen-aside"></div>
                 <p class="texto uno">Ningún mensaje fue encontrado</p>
                 <p class="texto dos">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
         </aside>
     </div>
+    <script src="encriptador.js"></script>
 </body>
-
+    
 </html>
