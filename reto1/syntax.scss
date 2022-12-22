@@ -74,7 +74,6 @@ body {
                     margin: auto;
                     display: flex;
                     justify-content: space-between;
-
                     input[type=button] {
                         display: inline-block;
                         width: 40%;
@@ -83,7 +82,7 @@ body {
                         border: 1px solid $color_enfasis;
                         border-radius: 20px;
                         background: $color_botones;
-
+                        transition: all 0.3s;
                         &:focus {
                             background: $color_enfasis;
                             color: $color_fondo;

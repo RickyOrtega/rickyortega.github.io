@@ -61,7 +61,8 @@ body {
             padding: 20px;
             border: 1px solid #0a3871;
             border-radius: 20px;
-            background: #d8dfe8; }
+            background: #d8dfe8;
+            transition: all 0.3s; }
             body .contenedor main form .botones input[type=button]:focus {
               background: #0a3871;
               color: #f3f5fc; }

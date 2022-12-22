@@ -1,5 +1,6 @@
 let botonEncriptar = document.querySelector(".encriptar");
 let botonDesencriptar = document.querySelector(".desencriptar");
+let asideOriginal = document.getElementById('contenedor-aside');
 
 let texto = '';
 let cadenaEnc = '';
@@ -38,7 +39,7 @@ function encriptarTexto() {
                 cadenaEnc += texto[i];
         }
     }
-    alert(cadenaEnc);
+    cambiarTextoAside(cadenaEnc);
 }
 
 function desencriptarTexto() {
@@ -73,9 +74,15 @@ function desencriptarTexto() {
             i += 1;
         }
     } while (i < texto.length);
-    alert(cadenaEnc);
+    cambiarTextoAside(cadenaEnc);
 }
 
 function cambiarTextoAside(texto){
-    
+
+    let imagen_aside = document.getElementById('imagen-aside');
+    let texto_uno = document.getElementById('texto-uno');
+    let texto_dos = document.getElementById('texto-dos');
+    imagen_aside.style.display="none";
+    texto_dos.style.display="none";
+    texto_uno.innerText=texto;
 }
