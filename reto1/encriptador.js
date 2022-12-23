@@ -1,6 +1,7 @@
 let botonEncriptar = document.querySelector(".encriptar");
 let botonDesencriptar = document.querySelector(".desencriptar");
 let asideOriginal = document.getElementById('contenedor-aside');
+let va = 0;
 
 let texto = '';
 let cadenaEnc = '';
@@ -89,24 +90,32 @@ function desencriptarTexto() {
 }
 
 function cambiarTextoAside(texto) {
+
+    if (va == 0) {
+        eliminarElementosAside();
+    }
+
+    asideOriginal.innerHTML = "<p class=\"texto\">" + texto + "</p>" + "<input type=\"button\" value=\"Copiar\" id=\"boton_copiar\" class=\"boton_copiar\">";
+
+    let boton_copiar = document.getElementById('boton_copiar');
+
+    let elemento = document.querySelector('.texto');
+
+    boton_copiar.addEventListener('click', function (event) {
+        copyToCb(elemento);
+    });
+}
+
+function eliminarElementosAside() {
     let imagen_aside = document.getElementById('imagen-aside');
     let texto_uno = document.getElementById('texto-uno');
     let texto_dos = document.getElementById('texto-dos');
     imagen_aside.style.display = "none";
     texto_dos.style.display = "none";
-    asideOriginal.innerHTML = "<p class=\"texto\">" + texto + "</p>" + "<input type=\"button\" value=\"Copiar\" id=\"boton_copiar\" class=\"boton_copiar\">";
-
-    let boton_copiar = document.getElementById('boton_copiar');
-
-    const elemento = document.querySelector('.texto');
-
-    boton_copiar.addEventListener('click', function () {
-        copyToCb(elemento);
-    });
-    return;
+    va++;
 }
 
-function copyToCb(elemento){
+function copyToCb(elemento) {
     const textarea = document.createElement("input");
     textarea.setAttribute('value', elemento.innerText);
     document.body.appendChild(textarea);
@@ -114,5 +123,4 @@ function copyToCb(elemento){
     document.execCommand('copy');
     document.body.removeChild(textarea);
     alert('Texto copiado al portapapeles.');
-    return;
 }
