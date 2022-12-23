@@ -22,9 +22,13 @@
         <main>
             <form action="">
                 <textarea placeholder="Ingrese el texto aquí" id="texto" required></textarea>
-                <div class="exclamacion">
-                    <p>!</p>
-                </div>Solo letras minúsculas y sin acentos.
+                    <div class="advertencias">
+                        <div class="exclamacion">
+                            <p>!</p>
+                        </div>
+                        <div class="advertencia uno">Solo letras minúsculas y sin acentos.</div>
+                        <div class="advertencia dos" id="advertencia_dos">Se eliminarán los acentos y letras mayúsculas (Si es que los hay).</div>
+                    </div>
                 <div class="botones">
                     <input type="button" value="Encriptar" id="encriptar" class="encriptar">
                     <input type="button" value="Desencriptar" id="desencriptar" class="desencriptar">

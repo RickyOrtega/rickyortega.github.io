@@ -91,6 +91,9 @@ function desencriptarTexto() {
 
 function cambiarTextoAside(texto) {
 
+    texto = texto.toLowerCase();
+    texto = removeAccents(texto);
+
     if (va == 0) {
         eliminarElementosAside();
     }
@@ -101,15 +104,21 @@ function cambiarTextoAside(texto) {
 
     let elemento = document.querySelector('.texto');
 
+
+
     boton_copiar.addEventListener('click', function (event) {
         copyToCb(elemento);
     });
 }
 
 function eliminarElementosAside() {
+
+    let advertencia_dos = document.getElementById('advertencia_dos');
+
     let imagen_aside = document.getElementById('imagen-aside');
     let texto_uno = document.getElementById('texto-uno');
     let texto_dos = document.getElementById('texto-dos');
+    advertencia_dos.style.display="inline-block";
     imagen_aside.style.display = "none";
     texto_dos.style.display = "none";
     va++;
@@ -124,3 +133,7 @@ function copyToCb(elemento) {
     document.body.removeChild(textarea);
     alert('Texto copiado al portapapeles.');
 }
+
+const removeAccents = (str) => {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+} 

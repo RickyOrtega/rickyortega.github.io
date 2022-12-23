@@ -60,21 +60,33 @@ body {
                     font-weight: 600;
                 }
 
-                .exclamacion {
-                    display: inline-block;
-                    margin-top: 20px;
-                    margin-right: 10px;
-                    padding: 3px 10px 3px 10px;
-                    border-radius: 100%;
-                    background: $color_enfasis;
-                    color: white;
+                .advertencias {
+                    .exclamacion {
+                        display: inline-block;
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        padding: 3px 10px 3px 10px;
+                        border-radius: 100%;
+                        background: $color_enfasis;
+                        color: white;
+                    }
+
+                    .advertencia {
+                        display: inline-block;
+                    }
+
+                    .dos {
+                        display: none;
+                    }
                 }
 
                 .botones {
                     margin: auto;
                     display: flex;
                     justify-content: space-between;
+
                     input[type=button] {
+                        cursor: pointer;
                         display: inline-block;
                         width: 40%;
                         margin: 20px auto;
@@ -83,7 +95,13 @@ body {
                         border-radius: 20px;
                         background: $color_botones;
                         transition: all 0.3s;
+
                         &:focus {
+                            background: $color_enfasis;
+                            color: $color_fondo;
+                        }
+
+                        &:hover {
                             background: $color_enfasis;
                             color: $color_fondo;
                         }
@@ -103,11 +121,13 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+
             .contenedor-aside {
                 font-size: 30px;
                 font-weight: 600;
                 display: flex;
                 flex-direction: column;
+
                 .imagen {
                     img {
                         display: flex;
@@ -135,7 +155,9 @@ body {
                     font-size: 20px;
                     font-weight: light;
                 }
+
                 input[type=button] {
+                    cursor: pointer;
                     display: inline-block;
                     width: 100px;
                     margin: 20px auto;
@@ -145,7 +167,13 @@ body {
                     background: $color_botones;
                     transition: all 0.3s;
                     font-size: 18px;
+
                     &:focus {
+                        background: $color_enfasis;
+                        color: $color_fondo;
+                    }
+
+                    &:hover {
                         background: $color_enfasis;
                         color: $color_fondo;
                     }
@@ -159,14 +187,17 @@ body {
     body {
         .contenedor {
             display: inline;
+
             main {
                 width: 100%;
+
                 form {
                     width: 90%;
                     margin: auto;
                     padding: 10px;
                     margin-left: 5%;
                     margin-right: 5%;
+
                     textarea {
                         height: 920px;
                         max-height: 920px;
@@ -175,12 +206,13 @@ body {
                 }
             }
 
-            aside{
+            aside {
                 margin: auto;
                 margin-bottom: 20px;
                 padding: 10px;
                 width: 80%;
-                .imagen{
+
+                .imagen {
                     display: none;
                 }
             }
@@ -188,11 +220,11 @@ body {
     }
 }
 
-@media screen and (max-width: 800px){
-    body{
-        .contenedor{
-            main{
-                form{
+@media screen and (max-width: 800px) {
+    body {
+        .contenedor {
+            main {
+                form {
                     textarea {
                         height: 600px;
                         max-height: 600px;
