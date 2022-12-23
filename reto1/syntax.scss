@@ -103,7 +103,6 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-
             .contenedor-aside {
                 font-size: 30px;
                 font-weight: 600;
@@ -135,6 +134,21 @@ body {
                 .dos {
                     font-size: 20px;
                     font-weight: light;
+                }
+                input[type=button] {
+                    display: inline-block;
+                    width: 100px;
+                    margin: 20px auto;
+                    padding: 20px 20px 20px 20px;
+                    border: 1px solid $color_enfasis;
+                    border-radius: 20px;
+                    background: $color_botones;
+                    transition: all 0.3s;
+                    font-size: 18px;
+                    &:focus {
+                        background: $color_enfasis;
+                        color: $color_fondo;
+                    }
                 }
             }
         }
